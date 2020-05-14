@@ -33,7 +33,7 @@ function buildCharMap(str){
 }
 
 
-// Solution 2
+// Solution #2
 function anagrams(stringA, stringB){
   return cleanString(stringA) === cleanString(stringB);
 }
