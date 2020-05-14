@@ -32,6 +32,16 @@ function buildCharMap(str){
   return charMap;
 }
 
+
+// Solution 2
+function anagrams(stringA, stringB){
+  return cleanString(stringA) === cleanString(stringB);
+}
+
+function cleanString(str){
+  return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+}
+
 // anagrams("rail safety", "fairy tales");
-anagrams("RAIL! SAFETY!", "fairy tales");
+// anagrams("RAIL! SAFETY!", "fairy tales");
 // anagrams("Hi there", "Bye there");
